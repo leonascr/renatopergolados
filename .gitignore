@@ -1,0 +1,8 @@
+# Originais baixados do Instagram (não usados pelo site)
+img/extras/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
