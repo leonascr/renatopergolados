@@ -744,10 +744,12 @@ fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
   .nav a::after { display: none; }
   .nav__mobile-cta { display: inline-block; margin-top: 12px; font-family: var(--caps) !important; font-size: 13px !important; letter-spacing: .14em !important; padding: 14px 28px; border-radius: 999px; background: var(--ink); color: var(--paper); }
   .menu-open .nav { clip-path: circle(150% at calc(100% - 52px) 42px); }
-  .menu-open .header { color: var(--ink); }
+  /* backdrop-filter faria o header virar o contêiner do menu fixo (cortando-o em 70px) */
+  .menu-open .header { color: var(--ink); backdrop-filter: none; -webkit-backdrop-filter: none; }
   .menu-open .burger span:nth-child(1) { top: 22px; transform: rotate(45deg); }
   .menu-open .burger span:nth-child(2) { top: 22px; transform: rotate(-45deg); }
   .menu-open { overflow: hidden; }
+  .menu-open .wa { opacity: 0; pointer-events: none; }
 
   .hero__foot { display: none; }
   .hero__mark { --mark: min(96vw, 720px); top: calc(70% - var(--mark) / 2); opacity: .26; }
